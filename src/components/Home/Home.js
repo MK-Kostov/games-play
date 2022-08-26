@@ -8,6 +8,7 @@ const Home = () => {
   useEffect(() => {
     gameService.getAll().then((result) => {
       setGames(result);
+      console.log(result);
     });
   }, []);
 
